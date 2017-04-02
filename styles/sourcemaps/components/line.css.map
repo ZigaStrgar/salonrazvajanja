@@ -1,0 +1,1 @@
+{"version":3,"sources":["line.css"],"names":[],"mappings":"AAAA,MACE,WAAY,AACZ,UAAY,CAAE,AACd,WACE,UAAY,CAAE,AAChB,cACE,+BAAiC,CAAE","file":"../../components/line.css","sourcesContent":[".line {\n  height: 5px;\n  width: 60px; }\n  .line__min {\n    width: 40px; }\n  .line__bottom {\n    border-bottom: solid 4px #fcd505; }\n"]}
