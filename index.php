@@ -1,6 +1,6 @@
 <?php include_once 'header.php'; ?>
 <?php
-$articles = Db::queryAll("SELECT * FROM news ORDER BY id DESC;");
+$articles = Db::queryAll("SELECT * FROM news ORDER BY id DESC LIMIT 5;");
 ?>
     <section class="line__bottom">
         <div class="owl-carousel owl-theme">

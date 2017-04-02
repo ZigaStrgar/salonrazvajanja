@@ -33,6 +33,7 @@ include_once './core/session.php';
                     <a href="index.php">Domov</a>
                     <a href="storitve.php">Storitve</a>
                     <a href="cenik.php">Cenik</a>
+                    <a href="novice.php">Novice</a>
                     <a href="onas.php">O nas</a>
                     <?php
                     if ( $_SESSION["logged"] ) {

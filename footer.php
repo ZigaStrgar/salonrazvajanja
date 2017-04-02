@@ -19,6 +19,7 @@
                             <a href="index.php" class="mb15">Domov</a>
                             <a href="storitve.php" class="mb15">Storitve</a>
                             <a href="cenik.php" class="mb15">Cenik</a>
+                            <a href="novice.php" class="mb15">Novice</a>
                             <a href="onas.php" class="mb15">O nas</a>
                             <?php
                             if ( $_SESSION["logged"] ) {
