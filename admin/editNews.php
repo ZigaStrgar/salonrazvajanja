@@ -25,7 +25,7 @@ $news = Db::queryOne("SELECT * FROM news WHERE id = ?", $id);
                     </div>
                     <div class="row flex--center mt35 mb20">
                         <fieldset class="material col-md-12">
-                            <textarea id="content" class="form-control row" name="content" required><?= $news['text'] ?></textarea>
+                            <textarea id="content" class="form-control row" name="content"><?= $news['text'] ?></textarea>
                             <hr>
                             <label class="mt-20">Vsebina</label>
                         </fieldset>

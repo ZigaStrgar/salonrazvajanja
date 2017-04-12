@@ -24,7 +24,7 @@ $services = Db::queryAll("SELECT * FROM services;");
                     </div>
                     <div class="row flex--center mt35 mb20">
                         <fieldset class="material col-md-12">
-                            <textarea id="content" class="form-control row" name="content" required=""></textarea>
+                            <textarea id="content" class="form-control row" name="content"></textarea>
                             <hr>
                             <label class="mb30 mt-35">Opis</label>
                         </fieldset>
