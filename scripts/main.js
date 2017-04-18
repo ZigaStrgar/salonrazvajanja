@@ -48,4 +48,28 @@ function myMap() {
         map: map
     });
 }
+
+$("#imageUpload").submit(function (event) {
+    var formData = new FormData($("#imageUpload")[0]);
+    event.preventDefault();
+    $.ajax({
+        url: '/admin/imageUpload.php',
+        type: 'POST',
+        data: formData,
+        success: function (result) {
+            console.log(result);
+            var parts = result.split("|");
+            if (parts[0] === "success") {
+                $("#result").html("<strong>Slika naložena! Povezava do slike: " + parts[1] + "</strong>")
+            } else {
+                $("#result").html("<strong>Napaka pri nalaganju slike!</strong>")
+            }
+        },
+        cache: false,
+        contentType: false,
+        processData: false,
+    });
+    event.preventDefault();
+    return false;
+})
 //# sourceMappingURL=sourcemaps/main.js.map

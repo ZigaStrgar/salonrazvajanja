@@ -34,6 +34,7 @@ $articles = Db::queryAll("SELECT * FROM news ORDER BY id DESC;");
                     </div>
                 </form>
             </div>
+            <?php include_once 'partials/imageUpload.php'; ?>
             <div class="flex flex--center pt45">
                 <?php
                 foreach ( $articles as $news )
